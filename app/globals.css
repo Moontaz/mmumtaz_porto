@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   --paper: #f4f4f1;
+   --ink: #111111;
+   --muted: #6e6e69;
+   --line: #d9d9d3;
+   --electric: #2454ff;
+   --font-sans: Arial, Helvetica, sans-serif;
+   --font-display: Arial, Helvetica, sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+   background: var(--paper);
+}
+body {
+   margin: 0;
+   background: var(--paper);
+   color: var(--ink);
+   font-family: var(--font-sans);
+}
+body,
+button,
+a {
+   cursor: none;
+}
+[data-active="true"] {
+   width: 5rem;
+   height: 5rem;
+}
+.custom-cursor[data-cursor-tone="light"] {
+   background-color: var(--paper);
+   box-shadow: 0 0 0 1px rgba(17, 17, 17, 0.16);
+   mix-blend-mode: normal;
+}
+.custom-cursor[data-cursor-tone="light"] span {
+   color: var(--ink);
+}
+button,
+a {
+   -webkit-tap-highlight-color: transparent;
+}
+::selection {
+   background: var(--electric);
+   color: white;
+}
+:focus-visible {
+   outline: 2px solid var(--electric);
+   outline-offset: 4px;
+}
+
+@media (pointer: coarse), (max-width: 767px) {
+   body,
+   button,
+   a {
+      cursor: auto;
+   }
+}
+
+.link-underline {
+   position: relative;
+}
+.link-underline::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: -0.35rem;
+   height: 1px;
+   transform: scaleX(0);
+   transform-origin: right;
+   background: currentColor;
+   transition: transform 0.35s ease;
+}
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+@layer utilities {
+   .text-balance {
+      text-wrap: balance;
+   }
+   .editorial-heading {
+      letter-spacing: -0.075em;
+      line-height: 0.92;
+   }
+   .hairline {
+      border-color: var(--line);
+   }
+   .mask-reveal {
+      clip-path: inset(0 0 100% 0);
+   }
+   .no-scrollbar::-webkit-scrollbar {
+      display: none;
+   }
+   .no-scrollbar {
+      scrollbar-width: none;
+   }
+}
+
+@keyframes blink {
+   0%,
+   100% {
+      opacity: 0.25;
+   }
+   50% {
+      opacity: 1;
+   }
+}
+@keyframes loader-bar {
+   from {
+      transform: scaleX(0);
+   }
+   to {
+      transform: scaleX(1);
+   }
+}
+
+.loader-bar {
+   transform-origin: left;
+   animation: loader-bar 1.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+.loader-dot {
+   animation: blink 1s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+   html {
+      scroll-behavior: auto;
+   }
+   *,
+   *::before,
+   *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+   }
+}
