@@ -70,7 +70,7 @@ export function SiteNav() {
                   <span className="h-1.5 w-1.5 bg-paper" />
                </span>
                <span>
-                  AM<span className="text-black/30">/</span>24
+                  AM<span className="text-black/30">/</span>26
                </span>
             </Link>
             <nav

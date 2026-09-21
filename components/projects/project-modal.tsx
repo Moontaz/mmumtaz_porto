@@ -133,7 +133,7 @@ export function ProjectModal({
                   </div>
                </div>
                <div className="border-l-0 border-line lg:min-h-0 lg:overflow-y-auto lg:border-l">
-                  <div className="relative aspect-[1.2] w-full overflow-hidden bg-black/5">
+                  <div className="relative aspect-[1.54/1] w-full overflow-hidden bg-black/5">
                      <Image
                         src={project.images[0]}
                         alt={`${project.title} primary screen`}
@@ -180,7 +180,7 @@ export function ProjectModal({
                         {project.images.slice(1).map((image, index) => (
                            <div
                               key={image}
-                              className="relative aspect-[1.2] overflow-hidden bg-black/5"
+                              className="relative aspect-[1.54/1] overflow-hidden bg-black/5"
                            >
                               <Image
                                  src={image}

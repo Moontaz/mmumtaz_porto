@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { projects, type Project } from "@/data/projects";
 import { ProjectModal } from "@/components/projects/project-modal";
+import { ProjectMedia } from "@/components/projects/project-media";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 type Position = { x: number; y: number };
@@ -201,7 +201,7 @@ export function ProjectExplorer() {
             <div className="flex flex-col justify-between gap-10 border-b border-line pb-10 md:flex-row md:items-end">
                <div>
                   <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.18em] text-electric">
-                     Archive / 2022 — 2024
+                     Archive / 2025 — 2026
                   </p>
                   <h1 className="editorial-heading max-w-4xl text-6xl font-bold sm:text-8xl">
                      Work in
@@ -233,13 +233,11 @@ export function ProjectExplorer() {
                         }}
                         className="group absolute left-0 top-0 overflow-hidden text-left will-change-transform"
                      >
-                        <Image
+                        <ProjectMedia
                            src={project.thumbnail}
                            alt={`${project.title} project preview`}
-                           fill
                            sizes="(max-width: 768px) 42vw, 240px"
-                           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                           draggable={false}
+                           className="transition-transform duration-700 ease-out group-hover:scale-105"
                         />
                         <span className="absolute inset-x-0 bottom-0 flex translate-y-full items-end justify-between bg-gradient-to-t from-black/80 to-transparent px-4 pb-4 pt-12 text-white transition-transform duration-500 group-hover:translate-y-0">
                            <span>

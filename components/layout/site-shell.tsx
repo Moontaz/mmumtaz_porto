@@ -92,7 +92,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             >
                <div className="mx-auto flex h-full w-full max-w-shell flex-col justify-between px-6 py-7 sm:px-10 lg:px-16">
                   <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.2em]">
-                     <span>AM / 2024</span>
+                     <span>AM / 2026</span>
                      <span>Independent frontend developer</span>
                   </div>
                   <div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -8,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { featuredProjects } from "@/data/projects";
 import { Magnetic } from "@/components/animations/magnetic";
+import { ProjectMedia } from "@/components/projects/project-media";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -191,12 +191,11 @@ function WorkSection() {
                      className={`group block ${index === 1 ? "md:mt-24" : ""}`}
                   >
                      <div className="relative aspect-[1.26] overflow-hidden bg-black/5">
-                        <Image
+                        <ProjectMedia
                            src={project.thumbnail}
                            alt={`${project.title} project preview`}
-                           fill
                            sizes="(max-width: 768px) 100vw, 50vw"
-                           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
+                           className="transition-transform duration-700 ease-out group-hover:scale-[1.035]"
                         />
                      </div>
                      <div className="mt-5 flex items-start justify-between gap-5">
