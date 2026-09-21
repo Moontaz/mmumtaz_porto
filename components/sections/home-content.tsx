@@ -338,6 +338,12 @@ function ExperienceSection() {
                         "Building interfaces, prototypes, and digital experiences for teams with something meaningful to say.",
                      ],
                      [
+                        "PT Bramantya Peninta Indonesia",
+                        "Frontend developer [Freelance]",
+                        "Jun 2026 — August 2026",
+                        "Developed and maintained the frontend of a SaaS ticketing platform using Vue, TypeScript, and Tailwind CSS, building core workflows including authentication, dashboards, ticket management, and user-facing interfaces.",
+                     ],
+                     [
                         "Your next chapter",
                         "Open to considered collaborations",
                         "Available",
