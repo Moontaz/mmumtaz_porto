@@ -255,7 +255,7 @@ function AboutSection() {
                      under the hood and quietly memorable on the surface.
                   </p>
                   <a
-                     href="mailto:hello@example.com"
+                     href="mailto:riedyriedy283@gmail.com"
                      className="group mt-12 inline-flex items-center gap-3 border-b border-white/30 pb-3 text-sm font-bold uppercase tracking-[0.13em] transition-colors hover:border-electric hover:text-electric"
                   >
                      Let&apos;s talk <Arrow />
@@ -396,14 +396,14 @@ function ContactSection() {
                </h2>
                <div className="lg:pb-3">
                   <a
-                     href="mailto:hello@example.com"
+                     href="mailto:riedyriedy283@gmail.com"
                      className="group inline-flex items-center gap-4 text-xl font-bold"
                   >
-                     hello@example.com <Arrow />
+                     riedyriedy283@gmail.com <Arrow />
                   </a>
                   <div className="mt-10 flex gap-6 text-[11px] uppercase tracking-[0.14em] text-white/65">
                      <a
-                        href="https://github.com"
+                        href="https://github.com/moontaz"
                         target="_blank"
                         rel="noreferrer"
                         className="link-underline hover:text-white"
@@ -411,14 +411,17 @@ function ContactSection() {
                         GitHub
                      </a>
                      <a
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/in/ridiey"
                         target="_blank"
                         rel="noreferrer"
                         className="link-underline hover:text-white"
                      >
                         LinkedIn
                      </a>
-                     <a href="#" className="link-underline hover:text-white">
+                     <a
+                        href="https://drive.google.com/file/d/1jMyCq1FuzGm7nfKSWyu6SH-tRRgO6erk/view?usp=sharing"
+                        className="link-underline hover:text-white"
+                     >
                         Résumé
                      </a>
                   </div>

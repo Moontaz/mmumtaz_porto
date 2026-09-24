@@ -19,6 +19,51 @@ export type Project = {
 // Replace the sample content below with your own case studies.
 export const projects: Project[] = [
    {
+      slug: "saling-pandu",
+      title: "Saling Pandu",
+      category: "SaaS Platform",
+      year: "2026",
+      role: "Frontend development · SaaS development · UI engineering",
+      description:
+         "A SaaS-based internal ticketing platform designed to help organizations manage support requests, communication, and operational workflows in a centralized workspace.",
+      technologies: [
+         "Vue",
+         "TypeScript",
+         "Tailwind CSS",
+         "Pinia",
+         "Vue Router",
+         "Axios",
+         "Laravel",
+         "MySQL",
+      ],
+      thumbnail: "/work/salingpandu/salingpandu-thumbnail.mp4",
+      images: [
+         "/work/salingpandu/salingpandu-preview-1.png",
+         "/work/salingpandu/salingpandu-preview-2.png",
+         "/work/salingpandu/salingpandu-preview-3.png",
+         "/work/salingpandu/salingpandu-preview-4.png",
+         "/work/salingpandu/salingpandu-preview-5.png",
+      ],
+      challenge:
+         "The existing internal ticketing workflow needed to evolve into a more structured SaaS experience while keeping complex support operations clear and efficient for different types of users.",
+      solution:
+         "I worked on the frontend implementation of the SaaS platform, building reusable Vue components and responsive interfaces for ticket management, conversations, templates, references, escalations, and organization workflows while integrating them with the Laravel API.",
+      features: [
+         "SaaS ticket management",
+         "Ticket conversation and reply system",
+         "Public and internal replies",
+         "Ticket escalation workflow",
+         "Reusable response templates",
+         "Organization-based access",
+         "Reference and knowledge management",
+         "File attachment support",
+         "Responsive dashboard interface",
+         "API-driven frontend architecture",
+      ],
+      githubUrl: "",
+      liveUrl: "https://pandu.salingsae.id/",
+   },
+   {
       slug: "masmile",
       title: "MASMILE",
       category: "Computer Vision",
@@ -127,60 +172,6 @@ export const projects: Project[] = [
       ],
       githubUrl: "https://github.com/Moontaz/MAARCH",
       liveUrl: "https://maarch.vercel.app/",
-   },
-
-   // existing projects...
-   {
-      slug: "northstar-editorial",
-      title: "Northstar Editorial",
-      category: "Computer Vision",
-      year: "2026",
-      role: "Full-stack development · Motion design",
-      description:
-         "A calm, highly-readable publishing experience built around modular stories and deliberate motion.",
-      technologies: [
-         "Next.js",
-         "TypeScript",
-         "GSAP",
-         "Tailwind CSS",
-         "MediaPipe",
-         "Web Camera API",
-      ],
-      thumbnail: "/work/northstar.svg",
-      images: ["/work/northstar.svg", "/work/northstar-detail.svg"],
-      challenge:
-         "The brief called for a premium editorial surface that could hold long-form stories without losing a sense of discovery.",
-      solution:
-         "I paired a strong typographic grid with restrained scroll choreography, making the content feel tactile without competing with the writing.",
-      features: [
-         "Responsive editorial grid",
-         "Chapter progress navigation",
-         "Motion-safe image reveals",
-         "CMS-ready story modules",
-      ],
-   },
-
-   {
-      slug: "field-notes",
-      title: "Field Notes",
-      category: "Research platform",
-      year: "2023",
-      role: "Product UI · Frontend development",
-      description:
-         "A research library that turns dense qualitative work into a navigable, human-scale archive.",
-      technologies: ["React", "TypeScript", "Node.js", "REST API"],
-      thumbnail: "/work/field-notes.svg",
-      images: ["/work/field-notes.svg", "/work/field-notes-detail.svg"],
-      challenge:
-         "Researchers needed an interface that made hundreds of fragments feel connected, while keeping filtering and reading frictionless.",
-      solution:
-         "The interface uses a flexible index, persistent context, and progressive disclosure to surface relationships without overwhelming the reader.",
-      features: [
-         "Filterable archive",
-         "Keyboard-first navigation",
-         "Persistent reading context",
-         "Accessible data states",
-      ],
    },
 ];
 
